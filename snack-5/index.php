@@ -1,18 +1,16 @@
 <?php
 /*
-## Snack 2
-Passare come parametri GET name, mail e age e verificare (cercando i metodi che non conosciamo nella documentazione) che name sia più lungo di 3 caratteri, che mail contenga un punto e una chiocciola e che age sia un numero. Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato”
 ## Snack 5
-Prendere un paragrafo abbastanza lungo, contenente diverse frasi. Prendere il paragrafo e suddividerlo in tanti paragrafi. Ogni punto un nuovo paragrafo.
-aggiungete poi i seguenti snack da realizzare
-## Snack 1
-Creiamo un array contenente le partite di basket di un’ipotetica tappa del calendario. Ogni array avrà una squadra di casa e una squadra ospite, punti fatti dalla squadra di casa e punti fatti dalla squadra ospite. Stampiamo a schermo tutte le partite con questo schema.
-Olimpia Milano - Cantù | 55-60
-## Snack 4
-Creare un array con 15 numeri casuali, tenendo conto che l’array non dovrà contenere lo stesso numero più di una volta
-## Snack 7
-Creare un array contenente qualche alunno di un’ipotetica classe. Ogni alunno avrà Nome, Cognome e un array contenente i suoi voti scolastici. Stampare Nome, Cognome e la media dei voti di ogni alunno.
+Prendere un paragrafo abbastanza lungo, contenente diverse frasi.
+Prendere il paragrafo e suddividerlo in tanti paragrafi.
+Ogni punto un nuovo paragrafo.
 */
+$lorem = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta iure, asperiores voluptas quos eius consequuntur voluptates officiis quam consectetur iste saepe totam incidunt ab deleniti illum architecto delectus, quod recusandae excepturi accusamus velit id. Error vitae voluptatibus quidem dolorem laboriosam nihil dolore alias, eius modi, numquam ea cumque soluta veniam in esse libero? Quasi ipsa numquam sit deserunt odit iure perspiciatis alias soluta est repellat illum, eius ducimus laudantium eveniet velit, asperiores quisquam provident nesciunt? Nobis, alias quam? Excepturi doloremque, repellendus numquam voluptatum quidem perspiciatis. Impedit voluptatum laborum labore sit, consequatur explicabo sequi excepturi qui nam eum ullam eaque. Dicta?';
+
+$multiLorem = explode(".", $lorem);
+
+var_dump($multiLorem);
+
 ?>
 
 <!DOCTYPE html>
@@ -24,6 +22,6 @@ Creare un array contenente qualche alunno di un’ipotetica classe. Ogni alunno 
     <title>Document</title>
 </head>
 <body>
-    <h1>HW</h1>
+    <h1>HW5</h1>
 </body>
 </html>
