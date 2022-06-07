@@ -24,7 +24,9 @@ $classe = [
     ],
 ];
 
-var_dump($classe);
+// var_dump($classe);
+
+
 ?>
 
 <!DOCTYPE html>
@@ -39,8 +41,8 @@ var_dump($classe);
     <h1>HW7</h1>
     <ul>
         <?php
-            foreach($classe as $studente => $nome){
-                echo "$studente = $nome <br>";
+            for($i = 0; $i < count($classe); $i++){
+                echo '<li>' . $classe[$i]['nome'] . ' ' . $classe[$i]['cognome'] . ' (media) ' . round(array_sum($classe[$i]['voti'])/count($classe[$i]['voti'])) . '</li>';
             }
         ?>
     </ul>
