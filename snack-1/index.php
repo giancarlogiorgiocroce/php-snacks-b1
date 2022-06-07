@@ -6,6 +6,28 @@ Ogni array avrà una squadra di casa e una squadra ospite, punti fatti dalla squ
 Stampiamo a schermo tutte le partite con questo schema.
 Olimpia Milano - Cantù | 55-60
 */
+$array = [
+    [
+        'host' => 'Celtics',
+        'guest' => 'Heat',
+        'hostpoits' => 103,
+        'guestpoits' => 111,
+    ],
+    [
+        'host' => 'Warriors',
+        'guest' => 'Mavericks',
+        'hostpoits' => 120,
+        'guestpoits' => 110,
+    ],
+    [
+        'host' => 'Sixers',
+        'guest' => 'Grizzlies',
+        'hostpoits' => 142,
+        'guestpoits' => 112,
+    ],
+];
+
+// var_dump($array);
 ?>
 
 <!DOCTYPE html>
@@ -17,6 +39,13 @@ Olimpia Milano - Cantù | 55-60
     <title>Document</title>
 </head>
 <body>
-    <h1>HW</h1>
+    <h3>Ultime partite giocate:</h3>
+    <ul>
+        <?php 
+            for($i = 0; $i < count($array); $i++){
+                echo '<li>' . $array[$i]['host'] . ' - ' . $array[$i]['guest'] . ' | ' . $array[$i]['hostpoits'] . ' - ' . $array[$i]['guestpoits'] . '</li>';
+            }
+        ?>
+    </ul>
 </body>
 </html>
